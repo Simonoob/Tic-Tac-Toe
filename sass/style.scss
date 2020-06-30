@@ -1,0 +1,68 @@
+@import "variables";
+ body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-color;
+
+
+    header{
+        font-weight: bolder;
+        font-size: 6em;
+        text-align: center;
+        color: $primary-color;
+    }
+
+    #overlay{
+        margin: auto;
+        font-size: 1.5em;
+        color: $primary-color;
+        text-align: center;
+    }
+
+    #grid-container{
+        display: flex;
+        justify-content: center;
+        border: medium solid $secondary-color;
+        width: fit-content;
+        margin: auto;
+        padding: 2em;
+    
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(3, 15em);
+            grid-template-rows: repeat(3, 15em);
+            
+            .grid-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .item-content{
+                    font-size: 4em;
+                    color: $primary-color;
+                }
+            }
+    
+            #square-11{
+                border: medium solid $primary-color;
+            }
+            #square-01, #square-21{
+                border-right: medium solid $primary-color;
+                border-left: medium solid $primary-color;
+            }
+            #square-10, #square-12{
+                border-top: medium solid $primary-color;
+                border-bottom: medium solid $primary-color;
+            }
+        }
+    }
+
+
+ }
+
+ .hide{
+     display: none;
+ }
+
+ .show{
+     display: inherit;
+ }

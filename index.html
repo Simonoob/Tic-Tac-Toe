@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>Tic Tac Toe</header>
+
+
+    <div id="overlay" class="show">
+
+        <div id="intro">
+            <p><strong>Tic-Tac-Toe</strong> is a simple game in which 2 players alternate diferent markings in a 3x3 grid.
+            The first to complete either a <strong>full straight line</strong> (row or column) or a <strong>diagonal</strong> with its markings, <strong>wins!</strong></p>
+            <div class="play-buttons">
+                <a id="btn-PvP" href="#"><strong>Player</strong> vs <strong>Player</strong></a>
+                <a id="btn-PvC" href="#"><strong>Player</strong> vs <strong>Computer</strong></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="main-page" class="hide">
+
+        <div id="grid-container">
+            <div id="grid">
+                <div class="grid-item" id="square-00">
+                    <div class="item-content">x</div>
+                </div>
+                <div class="grid-item" id="square-01">
+                    <div class="item-content">o</div>
+                </div>
+                <div class="grid-item" id="square-02">
+                    <div class="item-content">x</div>
+                </div>
+                <div class="grid-item" id="square-10">
+                    <div class="item-content">o</div>
+                </div>
+                <div class="grid-item" id="square-11">
+                    <div class="item-content">x</div>
+                </div>
+                <div class="grid-item" id="square-12">
+                    <div class="item-content">o</div>
+                </div>
+                <div class="grid-item" id="square-20">
+                    <div class="item-content">x</div>
+                </div>
+                <div class="grid-item" id="square-21">
+                    <div class="item-content">o</div>
+                </div>
+                <div class="grid-item" id="square-22">
+                    <div class="item-content">x</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
